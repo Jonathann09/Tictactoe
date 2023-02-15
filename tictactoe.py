@@ -358,3 +358,18 @@ def CheckWiner():
     elif Winer==-1 and Count==9:
         messagebox.showinfo(title="Oops!!",message="It's a Tie")
         game_ended()      
+
+
+for i in range(1,4):
+    root.grid_rowconfigure(i,weight=1)
+
+for i in range(3):
+    root.grid_columnconfigure(i,weight=1)
+
+def enter_function(event):
+    b10.invoke()
+root.bind('<Return>',enter_function)
+
+
+root.mainloop()
+       
