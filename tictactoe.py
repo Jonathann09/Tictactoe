@@ -33,3 +33,7 @@ label4=Label(root,text='PLAYER 2',font="Times 15 bold",bg='white',fg='black',bd=
 b1=Button(root,text='',font="Times 35 bold",bg='white',fg='black',width=12)
 b1.grid(row=1,column=0,padx=5,pady=5,sticky='snew')
 b1.config(command=lambda:ButtonClick(1))
+
+b2=Button(root,text='',font="Times 35 bold",bg='white',fg='black',width=12)
+b2.grid(row=1,column=1,padx=5,pady=5,sticky='snew')
+b2.config(command=lambda:ButtonClick(2))
