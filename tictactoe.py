@@ -95,3 +95,32 @@ def Restart():
 
     label3=Label(root,text='PLAYER 1',font="Times 15 bold",bg='cadet blue',fg='black',bd=4,height=2,width=10,relief=RAISED,)
     label3.grid(row=0,column=0,padx=5,pady=5,sticky='nsnew')
+    b1['state']='active'
+    b1['text']=''
+    b1['bg']='white'
+    b2['state']='active'
+    b2['text']=''
+    b2['bg']='white'
+    b3['state']='active'
+    b3['text']=''
+    b3['bg']='white'
+    b4['state']='active'
+    b4['text']=''
+    b4['bg']='white'
+    b5['state']='active'
+    b5['text']=''
+    b5['bg']='white'
+    b6['state']='active'
+    b6['text']=''
+    b6['bg']='white'
+    b7['state']='active'
+    b7['text']=''
+    b7['bg']='white'
+    b8['state']='active'
+    b8['text']=''
+    b8['bg']='white'
+    b9['state']='active'
+    b9['text']=''
+    b9['bg']='white'
+    p1.clear()
+    p2.clear()
