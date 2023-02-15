@@ -75,3 +75,23 @@ b10.config(command=lambda:Restart())
 b11=Button(root,font="Times 15 bold",text='END',bg='cadet blue',fg='white',height=2,width=10)
 b11.grid(row=4,column=2,padx=5,pady=5,sticky='snew')
 b11.config(command=lambda:game_terminate())
+
+def game_terminate():
+    root.destroy()
+
+def Restart():
+    global label3
+    global label4
+    global ActivePlayer
+    ActivePlayer=1
+    
+    global Count
+    Count=0
+
+    label3.destroy()
+    label4.destroy()
+
+    root.title("Tic Tac Toe :Player 1")
+
+    label3=Label(root,text='PLAYER 1',font="Times 15 bold",bg='cadet blue',fg='black',bd=4,height=2,width=10,relief=RAISED,)
+    label3.grid(row=0,column=0,padx=5,pady=5,sticky='nsnew')
