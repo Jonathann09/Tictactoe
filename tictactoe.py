@@ -184,5 +184,62 @@ def ButtonClick(id):
         ActivePlayer=1
         print(f"P2:{p2}")
     if Count==5 or Count>5:
-        CheckWiner()       
+        CheckWiner()    
+
+def SetLayout(id,PlayerSymbol,colr):
+
+    global Count
+    if id==1:
+        b1['text']=PlayerSymbol
+        b1['state']='disabled'
+        b1['bg']=colr
+        b1['fg']='black'
+        Count = Count+1
+
+    elif id==2:
+        b2['text']=PlayerSymbol
+        b2['state']='disable'
+        b2['bg']=colr
+        Count= Count+1
+
+    elif id==3:
+        b3['text']=PlayerSymbol
+        b3['state']='disable'
+        b3['bg']=colr
+        Count= Count+1
+
+    elif id==4:
+        b4['text']=PlayerSymbol
+        b4['state']='disable'
+        b4['bg']=colr
+        Count=Count+1
+
+    elif id==5:
+        b5['text']=PlayerSymbol
+        b5['state']='disable'
+        b5['bg']=colr
+        Count= Count+1
+
+    elif id==6:
+        b6['text']=PlayerSymbol
+        b6['state']='disable'
+        b6['bg']=colr
+        Count= Count+1
+
+    elif id==7:
+        b7['text']=PlayerSymbol
+        b7['state']='disable'
+        b7['bg']=colr
+        Count= Count+1
+    elif id==8:
+        b8['text']=PlayerSymbol
+        b8['state']='disable'
+        b8['bg']=colr
+        Count= Count+1
+
+    elif id==9:
+        b9['text']=PlayerSymbol
+        b9['state']='disable'
+        b9['bg']=colr
+        Count= Count+1          
        
