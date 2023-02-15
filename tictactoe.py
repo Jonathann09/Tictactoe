@@ -70,3 +70,8 @@ b10Photo = PhotoImage(file="Restart and enter.png")
 b10=Button(root,font="Times 15 bold",image=b10Photo ,bg='white',fg='white',height=2,width=10)
 b10.grid(row=4,column=1,padx=5,pady=5,sticky='snew')
 b10.config(command=lambda:Restart())
+
+
+b11=Button(root,font="Times 15 bold",text='END',bg='cadet blue',fg='white',height=2,width=10)
+b11.grid(row=4,column=2,padx=5,pady=5,sticky='snew')
+b11.config(command=lambda:game_terminate())
