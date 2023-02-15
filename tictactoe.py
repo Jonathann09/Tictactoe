@@ -242,4 +242,38 @@ def SetLayout(id,PlayerSymbol,colr):
         b9['state']='disable'
         b9['bg']=colr
         Count= Count+1          
-       
+
+def AssignSeperateColorToWiner(id):
+    if id=='R1':
+        b1['bg']='light green'
+        b2['bg']='light green'
+        b3['bg']='light green'
+    if id=='R2':
+        b4['bg']='light green'
+        b5['bg']='light green'
+        b6['bg']='light green'
+    if id=='R3':
+        b7['bg']='light green'
+        b8['bg']='light green'
+        b9['bg']='light green'
+    if id=='C1':
+        b1['bg']='light green'
+        b4['bg']='light green'
+        b7['bg']='light green'
+    if id=='C2':
+        b2['bg']='light green'
+        b5['bg']='light green'
+        b8['bg']='light green'
+    if id=='C3':
+        b3['bg']='light green'
+        b6['bg']='light green'
+        b9['bg']='light green'
+    if id=='D1':
+        b1['bg']='light green'
+        b5['bg']='light green'
+        b9['bg']='light green'
+    if id=='D2':
+        b3['bg']='light green'
+        b5['bg']='light green'
+        b7['bg']='light green'
+           
