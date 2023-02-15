@@ -1,5 +1,5 @@
 print("=======================")
-print("      Proggram by      ")
+print("      Programmed by    ")
 print("  Jonathan U. Urrete   ")
 print("=======================")
 
