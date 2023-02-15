@@ -357,6 +357,7 @@ def CheckWiner():
         game_ended()
     elif Winer==-1 and Count==9:
         messagebox.showinfo(title="Oops!!",message="It's a Tie")
+        print("It's a tie")
         game_ended()      
 
 
