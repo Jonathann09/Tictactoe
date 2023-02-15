@@ -276,4 +276,30 @@ def AssignSeperateColorToWiner(id):
         b3['bg']='light green'
         b5['bg']='light green'
         b7['bg']='light green'
-           
+
+
+def CheckWiner():
+    global ScoreX
+    global ScoreO
+    Winer=-1
+    #Rows
+    if ( (1 in p1) and (2 in p1) and (3 in p1) ):
+        Winer=1
+        AssignSeperateColorToWiner('R1')
+    if ( (1 in p2) and (2 in p2) and (3 in p2) ):
+        Winer=2
+        AssignSeperateColorToWiner('R1')
+
+    if ( (4 in p1) and (5 in p1) and (6 in p1) ):
+        Winer=1
+        AssignSeperateColorToWiner('R2')
+    if ( (4 in p2) and (5 in p2) and (6 in p2) ):
+        Winer=2
+        AssignSeperateColorToWiner('R2')
+
+    if ( (7 in p1) and (8 in p1) and (9 in p1) ):
+        Winer=1
+        AssignSeperateColorToWiner('R3')
+    if ( (7 in p2) and (8 in p2) and (9 in p2) ):
+        Winer=2
+        AssignSeperateColorToWiner('R3')
