@@ -37,3 +37,7 @@ b1.config(command=lambda:ButtonClick(1))
 b2=Button(root,text='',font="Times 35 bold",bg='white',fg='black',width=12)
 b2.grid(row=1,column=1,padx=5,pady=5,sticky='snew')
 b2.config(command=lambda:ButtonClick(2))
+
+b3=Button(root,text='',font="Times 35 bold",bg='white',fg='black',width=12)
+b3.grid(row=1,column=2,padx=5,pady=5,sticky='snew')
+b3.config(command=lambda:ButtonClick(3))
