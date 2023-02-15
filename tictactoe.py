@@ -325,3 +325,18 @@ def CheckWiner():
     if ( (3 in p2) and (6 in p2) and (9 in p2) ):
         Winer=2
         AssignSeperateColorToWiner('C3')
+
+ #Diagonals
+    if ( (1 in p1) and (5 in p1) and (9 in p1) ):
+        Winer=1
+        AssignSeperateColorToWiner('D1')
+    if ( (1 in p2) and (5 in p2) and (9 in p2) ):
+        Winer=2
+        AssignSeperateColorToWiner('D1')
+
+    if ( (3 in p1) and (5 in p1) and (7 in p1) ):
+        Winer=1
+        AssignSeperateColorToWiner('D2')
+    if ( (3 in p2) and (5 in p2) and (7 in p2) ):
+        Winer=2
+        AssignSeperateColorToWiner('D2')        
