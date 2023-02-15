@@ -339,4 +339,22 @@ def CheckWiner():
         AssignSeperateColorToWiner('D2')
     if ( (3 in p2) and (5 in p2) and (7 in p2) ):
         Winer=2
-        AssignSeperateColorToWiner('D2')        
+        AssignSeperateColorToWiner('D2')  
+
+    
+    #check
+    if Winer==1:
+        messagebox.showinfo(title="Congrats.",message="Player 1 Wins")
+        print("Player 1 Wins")
+        ScoreX+=1
+        label2['text']=f'SCORE PLAYER1: {ScoreX}\n PLAYER2: {ScoreO}'
+        game_ended()
+    elif Winer==2:
+        messagebox.showinfo(title="Congrats.",message="Player 2 Wins")
+        print("Player 2 Wins")
+        ScoreO+=1
+        label2['text']=f'SCORE PLAYER1: {ScoreX}\n PLAYER2: {ScoreO}'
+        game_ended()
+    elif Winer==-1 and Count==9:
+        messagebox.showinfo(title="Oops!!",message="It's a Tie")
+        game_ended()      
