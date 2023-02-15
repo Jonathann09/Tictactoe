@@ -65,3 +65,8 @@ b8.config(command=lambda:ButtonClick(8))
 b9=Button(root,text='',font="Times 35 bold",bg='white',fg='black',width=12)
 b9.grid(row=3,column=2,padx=5,pady=5,sticky='snew')
 b9.config(command=lambda:ButtonClick(9))
+
+b10Photo = PhotoImage(file="Restart and enter.png")
+b10=Button(root,font="Times 15 bold",image=b10Photo ,bg='white',fg='white',height=2,width=10)
+b10.grid(row=4,column=1,padx=5,pady=5,sticky='snew')
+b10.config(command=lambda:Restart())
