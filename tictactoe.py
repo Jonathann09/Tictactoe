@@ -124,3 +124,32 @@ def Restart():
     b9['bg']='white'
     p1.clear()
     p2.clear()
+
+def game_ended():
+    
+    global Count
+    Count=0
+
+    b1['state']='disable'
+    b1['text']=''
+    b2['state']='disable'
+    b2['text']=''
+    b3['state']='disable'
+    b3['text']=''
+    b4['state']='disable'
+    b4['text']=''
+    b5['state']='disable'
+    b5['text']=''
+    b6['state']='disable'
+    b6['text']=''
+    b7['state']='disable'
+    b7['text']=''
+    b8['state']='disable'
+    b8['text']=''
+    b9['state']='disable'
+    b9['text']=''
+    p1.clear()
+    p2.clear()
+        
+    
+       
