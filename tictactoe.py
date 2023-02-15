@@ -152,4 +152,37 @@ def game_ended():
     p2.clear()
         
     
+
+def ButtonClick(id):
+
+    global label3
+    global label4
+    global ActivePlayer
+    global p15
+    global p2
+    if ActivePlayer==1:
+        label3.destroy()
+        SetLayout(id,"X","cadet blue")
+        p1.append(id)
+
+        label4=Label(root,text='PLAYER 2',font="Times 15 bold",bg='white',fg='black',bd=4,height=2,width=10,relief=RAISED,)
+        label4.grid(row=0,column=2,padx=5,pady=5,sticky='nsnew')
+
+        root.title("Tic Tac Toe :Player 2")
+        ActivePlayer=2
+        print(f"P1:{p1}")
+
+    else:
+        label4.destroy()
+        SetLayout(id,"O","white")
+        p2.append(id)
+
+        label3=Label(root,text='PLAYER 1',font="Times 15 bold",bg='cadet blue',fg='black',bd=4,height=2,width=10,relief=RAISED,)
+        label3.grid(row=0,column=0,padx=5,pady=5,sticky='nsnew')
+
+        root.title("Tic Tac Toe :Player 1")
+        ActivePlayer=1
+        print(f"P2:{p2}")
+    if Count==5 or Count>5:
+        CheckWiner()       
        
